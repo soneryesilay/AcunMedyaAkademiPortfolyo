@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+
+@Html.Action("PartialHead","AdminLayout")
+<body>
+
+
+    <div class="wrapper d-flex align-items-stretch">
+        @Html.Action("PartialNavBar", "AdminLayout")
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+
+            @RenderBody()
+            
+        </div>
+    </div>
+
+   @Html.Action("ScriptsPartial", "AdminLayout")
+</body>
+</html>
+
+<!--Razor syntax HTMLde c# et işareti sayesinde yazmanı sağlar-->
