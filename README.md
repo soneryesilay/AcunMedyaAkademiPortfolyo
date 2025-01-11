@@ -1,1 +1,1 @@
-Acunmedya Akadmei CASE 1
+Acunmedya Akademi CASE 1
