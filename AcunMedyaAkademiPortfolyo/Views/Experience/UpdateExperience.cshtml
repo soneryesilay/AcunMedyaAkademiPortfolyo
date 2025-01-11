@@ -1,0 +1,31 @@
+﻿@model AcunMedyaAkademiPortfolyo.Models.TblExperience
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Deneyim Güncelleme Sayfası</h2>
+<form method="post">
+    <label>Deneyim Id</label>
+    @Html.TextBoxFor(x => x.ExperienceId, new
+    {
+        @class = "form-control",
+        @readonly = "readonly"
+    })
+    <br />
+
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+
+    <label>Zaman</label>
+    @Html.TextBoxFor(x => x.Period, new { @class = "form-control" })
+    <br />
+
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+
+    <button class="btn btn-success">Deneyimi Güncelle</button>
+</form>

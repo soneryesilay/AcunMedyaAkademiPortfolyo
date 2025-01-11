@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "CreateSkill";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Yetenek Girişi</h2>
+<form method="post">
+    <label>Yetenek Adı</label>
+    <input type="text" class="form-control" name="SkillTitle" style="border:solid" />
+    <br />
+
+    <label>Yetkinlik Seviyesi 1-100</label>
+    <input type="text" class="form-control" name="SkillValue" id="skillValue" style="border:solid" />
+    </br>
+    <button type="submit" class="btn btn-primary">Yetenek Ekle</button>
+    </br>
+    <span id="error"></span>
+
+</form>
+
+<script>  
+const skillValueInput = document.getElementById('skillValue');
+const errorSpan = document.getElementById('error');
+
+skillValueInput.addEventListener('input', () => {
+  const value = skillValueInput.value;
+  const numberValue = parseInt(value);
+
+  if (isNaN(numberValue) || numberValue < 1 || numberValue > 100) {
+    errorSpan.textContent = 'Lütfen 1 ile 100 arasında bir sayı giriniz.';
+    skillValueInput.style.borderColor = 'red';
+  } else {
+    errorSpan.textContent = '';
+    skillValueInput.style.borderColor = 'green';
+  }
+});
+</script>
+
+
+

@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Admin Dashboard";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --background-color: #ecf0f1;
+        --text-color: #333;
+    }
+
+    
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .widgets {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .widget {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .widget-value {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+  
+
+    
+</style>
+
+<div class="dashboard">
+    <main class="main-content">
+        <header>
+            <h1>Hoşgeldin!</h1>
+        </header>
+        <div class="widgets">
+            <div class="widget">
+                <h3>Toplam Kullanıcı</h3>
+                <p class="widget-value">1</p>
+            </div>
+            <div class="widget">
+                <h3>Görüntülenme</h3>
+                <p class="widget-value">1</p>
+            </div>
+            <div class="widget">
+                <h3>Aktif Proje</h3>
+                <p class="widget-value">1</p>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-theme');
+
+                // Save theme preference
+                const isDarkTheme = body.classList.contains('dark-theme');
+                localStorage.setItem('darkTheme', isDarkTheme);
+            });
+
+            // Load saved theme preference
+            const savedTheme = localStorage.getItem('darkTheme');
+            if (savedTheme === 'true') {
+                body.classList.add('dark-theme');
+            }
+        });
+    </script>
+

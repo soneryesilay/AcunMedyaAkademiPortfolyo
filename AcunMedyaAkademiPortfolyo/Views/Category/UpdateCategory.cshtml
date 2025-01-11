@@ -8,8 +8,11 @@
 <h2>Kategori Güncelleme Sayfası</h2>
 <form method="post">
     <label>Kategori Id</label>
-    @Html.TextBoxFor(x => x.CategoryId, new { @class = "form-control" })
-    <br />
+    @Html.TextBoxFor(x => x.CategoryId, new
+    {
+        @class = "form-control",
+        @readonly = "readonly"
+    })       <br />
     <label>Kategori Adı</label>
     @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
     <br />

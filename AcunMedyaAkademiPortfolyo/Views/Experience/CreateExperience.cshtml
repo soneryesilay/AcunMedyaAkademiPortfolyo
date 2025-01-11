@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "CreateExperience";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Eğitim Girişi</h2>
+<form method="post">
+    <label>Deneyim Adı</label>
+    <input type="text" class="form-control" name="Title" style="border:solid" />
+    <br />
+
+    <label>Zaman</label>
+    <input type="text" class="form-control" name="Period" style="border:solid" />
+    <br />
+
+    <label>Açıklama</label>
+    <input type="text" class="form-control" name="Description" style="border:solid" />
+    <br />
+    <button type="submit" class="btn btn-primary">Deneyim Ekle</button>
+</form>
+
+

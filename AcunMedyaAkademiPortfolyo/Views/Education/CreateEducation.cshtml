@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "CreateEducation";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Eğitiö Girişi</h2>
+<form method="post">
+    <label>Okul Adı</label>
+    <input type="text" class="form-control" name="Title" style="border:solid" />
+    <br />
+
+    <label>Bölüm Adı</label>
+    <input type="text" class="form-control" name="SubTitle" style="border:solid" />
+    <br />
+    
+    <label>Yıl</label>
+    <input type="text" class="form-control" name="Period" style="border:solid" />
+    <br />
+
+    <label>Açıklama</label>
+    <input type="text" class="form-control" name="Description" style="border:solid" />
+    <br />
+    <button type="submit" class="btn btn-primary">Eğitim Ekle</button>
+</form>
+
+

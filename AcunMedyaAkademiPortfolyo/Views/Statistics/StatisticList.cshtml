@@ -1,0 +1,34 @@
+﻿@model List<AcunMedyaAkademiPortfolyo.Models.TblStatistic>
+@{
+    ViewBag.Title = "StatisticList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>İstatistik Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>İstatistik ID</th>
+        <th>İstatistik Adı</th>
+        <th>İstatistik Değeri</th>
+        <th>İstatistik İkonu</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.StatisticId</td>
+            <td>@item.StatisticTitle</td>
+            <td>@item.StatisticValue</td>
+            <td>@item.StatisticIcon</td>
+            <td><a href="/Statistics/DeleteStatistic/@item.StatisticId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Statistics/UpdateStatistic/@item.StatisticId" class="btn btn-success">Güncelle</a></td>
+        </tr>
+
+    }
+</table>
+
+<a href="/Statistics/CreateStatistic/" class="btn btn-primary">Yeni İstatistik Girişi</a>

@@ -1,0 +1,26 @@
+﻿@model List<AcunMedyaAkademiPortfolyo.Models.TblSocialMedia>  
+ <!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+
+    <img src="/MyResume-1.0.0/assets/img/hero-bg.jpg" alt="">
+
+    <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h2>Soner Yeşilay</h2>
+                <p>Çalışmalarım: <span class="typed" data-typed-items="Yazılım, Tasarım, DevOps,">Geliştirme</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+                
+                
+                <div class="social-links">
+                    @foreach (var item in Model)
+                    {
+                        <a href="@item.SocialMediaLink"><i class="@item.SocialMediaIcon"></i></a>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section><!-- /Hero Section -->

@@ -1,0 +1,8 @@
+﻿@model List<AcunMedyaAkademiPortfolyo.Models.TblCategory>
+
+<ul class="portfolio-filters isotope-filters horizontal-list" data-aos="fade-up" data-aos-delay="100">
+    @foreach (var item in Model)
+    {
+        <li data-filter="@item.CategoryId" class="filter-active">@item.CategoryName</li>
+    }
+</ul>

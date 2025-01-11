@@ -1,0 +1,33 @@
+﻿@model AcunMedyaAkademiPortfolyo.Models.TblStatistic
+@{
+    ViewBag.Title = "UpdateStatistic";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>İstatistik Güncelleme Sayfası</h2>
+<form method="post">
+    <label>İstatistik Id</label>
+    @Html.TextBoxFor(x => x.StatisticId, new
+    {
+        @class = "form-control",
+        @readonly = "readonly"
+    })
+    <br />
+
+    <label>İstatistik Adı</label>
+    @Html.TextBoxFor(x => x.StatisticTitle, new { @class = "form-control" })
+    <br />
+
+    <label>İstatistik Değeri</label>
+    @Html.TextBoxFor(x => x.StatisticValue, new { @class = "form-control" })
+    <br />
+
+    <label>İstatistik İkonu</label>
+    @Html.TextBoxFor(x => x.StatisticIcon, new { @class = "form-control" })
+    <br />
+
+
+    <button class="btn btn-success">İstatistiği Güncelle</button>
+</form>
+
+

@@ -1,0 +1,59 @@
+﻿@model List<AcunMedyaAkademiPortfolyo.Models.TblAbout>
+
+<section id="about" class="about section">
+
+    <!-- Section Title -->
+    @foreach (var item in Model)
+    {
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Hakkımda</h2>
+
+            <p>@item.AboutTitle</p>
+        </div><!-- End Section Title -->
+
+
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4">
+            <img src="@item.AboutFoto" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 content">
+            <h2>@item.AboutTitle2</h2>
+            <p class="fst-italic py-3">
+                @item.About1
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <strong>Birthday:</strong>
+                            <span>@(item.Birthday.HasValue ? item.Birthday.Value.ToString("dd/MM/yyyy") : "Not Specified")</span>
+                        </li>
+
+
+                        <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>@item.Website</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>@item.Phone</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>@item.City</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>@item.Age</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>@item.Degree</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>@item.Email<span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>@item.Freelance</span></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="py-3">
+            </p>
+        </div>
+    </div>
+    @item.About2
+
+</div>
+    }
+</section>

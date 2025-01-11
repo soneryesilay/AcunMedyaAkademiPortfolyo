@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Referans Girişi</h2>
+<form method="post">
+    <label>Referans Başlığı</label>
+    <input type="text" class="form-control" name="Title" style="border:solid" />
+    <br />
+
+    <label>Referans Adı Soyadı</label>
+    <input type="text" class="form-control" name="NameSurname" style="border:solid" />
+    <br />
+
+    <label>Referans Yorumu</label>
+    <input type="text" class="form-control" name="CommentDetail" style="border:solid" />
+    <br />
+
+    <label>Referans Görseli</label>
+    <input type="text" class="form-control" name="ImageUrl" style="border:solid" />
+    <br />
+
+
+    <button type="submit" class="btn btn-primary">Referans Ekle</button>
+</form>
+

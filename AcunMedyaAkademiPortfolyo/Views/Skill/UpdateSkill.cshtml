@@ -1,0 +1,47 @@
+﻿@model AcunMedyaAkademiPortfolyo.Models.TblSkill
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yetenek Güncelleme Sayfası</h2>
+<form method="post">
+    <label>Yetenek Id</label>
+    @Html.TextBoxFor(x => x.SkillId, new
+    {
+        @class = "form-control",
+        @readonly = "readonly"
+    })       <br />
+    <label>Yetenek Adı</label>
+    @Html.TextBoxFor(x => x.SkillTitle, new { @class = "form-control" })
+    <br />
+
+    <label>Yetkinlik Seviyesi</label>
+
+    @Html.TextBoxFor(x => x.SkillValue, new { @class = "form-control" })
+    <span id="validationMessage" class="text-danger"></span>
+    <span id="error"></span>
+    @Html.ValidationMessageFor(m => m.SkillValue)
+
+    <button class="btn btn-success">Yeteneği Güncelle</button>
+
+
+</form>
+
+<script>
+    const skillValueInput = document.getElementById('skillValue');
+    const errorSpan = document.getElementById('error');
+
+    skillValueInput.addEventListener('input', () => {
+        const value = skillValueInput.value;
+        const numberValue = parseInt(value);
+
+        if (isNaN(numberValue) || numberValue < 1 || numberValue > 100) {
+            errorSpan.textContent = 'Lütfen 1 ile 100 arasında bir sayı giriniz.';
+            skillValueInput.style.borderColor = 'red';
+        } else {
+            errorSpan.textContent = '';
+            skillValueInput.style.borderColor = 'green';
+        }
+    });
+</script>

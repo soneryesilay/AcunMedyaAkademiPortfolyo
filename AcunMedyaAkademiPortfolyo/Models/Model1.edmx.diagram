@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="85aa41a2d513457db71cde8193169e85" Name="Diagram1" ZoomLevel="73">
+      <Diagram DiagramId="85aa41a2d513457db71cde8193169e85" Name="Diagram1" ZoomLevel="71">
         <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblCategory" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblEducation" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
@@ -12,9 +12,13 @@
         <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblMessage" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblProject" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblService" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblSkill" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblSkill" Width="1.5" PointX="9.125" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblTestimonial" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="dbAcunMedyaAkademiModel.FK_TblProject_TblCategory" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblSocialMedia" Width="1.5" PointX="10.125" PointY="1.625" />
+        <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblAbout" Width="1.5" PointX="12.125" PointY="4.25" />
+        <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblStatistic" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="dbAcunMedyaAkademiModel.TblContacts" Width="1.5" PointX="3.375" PointY="7.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
