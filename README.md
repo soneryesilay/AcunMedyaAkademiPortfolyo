@@ -5,7 +5,8 @@ Bu proje, 12.01.2025 tarihinde tamamladığım Acunmedya Akademi tarafından haz
 ## Eğitim İçeriği
 
 - AspNetCore MVC 5.0
-- DB First (Ef Core)
+- Entity Freamwork Core
+- DB First
 - CRUD
 
 
