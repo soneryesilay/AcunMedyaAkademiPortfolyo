@@ -4,10 +4,25 @@ Bu proje, 12.01.2025 tarihinde tamamladığım Acunmedya Akademi tarafından haz
 
 ## Eğitim İçeriği
 
-- AspNetCore MVC 5.0
-- Entity Freamwork Core
-- DB First
-- CRUD
+- ASP.NET - MVC
+
+- Linq Sorgular
+
+- Layout Kontrolü
+
+- Db First yaklaşımı
+
+- Entity Framework
+
+- Temel CRUD İşlemleri
+
+- Partial View Kullanımı
+
+- Model, View, Controller Yapıları
+
+- Entity Framework Sorguları
+
+- Bootstrap Kullanımı
 
 
 ## Proje Hakkında
