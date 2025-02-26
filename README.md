@@ -1,6 +1,6 @@
 # Acunmedya Akademi Portfolyo
 
-Bu proje, 12.01.2025 tarihinde tamamladığım Acunmedya Akademi tarafından hazırlanan C# ile programlamaya giriş eğitiminin ilk Case'ini  içermektedir.
+Bu proje, 12.01.2025 tarihinde tamamladığım Acunmedya Akademi ve Murat Yücedağ tarafından hazırlanan C# ile programlamaya giriş eğitiminin ilk Case'ini  içermektedir.
 
 ## Eğitim İçeriği
 
